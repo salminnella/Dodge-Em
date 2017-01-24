@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles.css">
+<script type="text/javascript" src="js/gameControls.js"></script>
+<title>Ericcson Code Test</title>
+</head>
+<body onload="beginGame()">
+<div id="tv"><p id="gamearea" align="center"></p></div>
+<div id="controller"><img src="images/nes-bt-controller.png" usemap="#Map" />
+  <map name="Map">
+    <area shape="rect" coords="75,81,104,102" onmousedown="movedown()" onmouseup="stopMove()" href="#">
+    <area shape="rect" coords="50,59,75,85" onmousedown="moveleft()" onmouseup="stopMove()" href="#">
+    <area shape="circle" coords="381,91,20" onmousedown="movedown()" onmouseup="stopMove()" href="#">
+    <area shape="circle" coords="423,61,21" onmousedown="moveright()" onmouseup="stopMove()" href="#">
+    <area shape="circle" coords="377,32,20" onmousedown="moveup()" onmouseup="stopMove()" href="#">
+    <area shape="circle" coords="335,61,21" onmousedown="moveleft()" onmouseup="stopMove()" href="#">
+    <area shape="rect" coords="78,40,107,61" onmousedown="moveup()" onmouseup="stopMove()" href="#">
+    <area shape="rect" coords="108,59,133,85" onmousedown="moveright()" onmouseup="stopMove()" href="#">
+  </map>
+</div>
+<button onclick="restartGame()" id="restartButton" class="btn">Restart</button>
+</body>
+</html>

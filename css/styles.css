@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/wallpaper.jpg) no-repeat center center fixed;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-width: 900px;
+}
+
+canvas {
+    border: 1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    position: relative;
+	top: 49px;
+    z-index: -1;
+}
+
+
+#tv {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/old_tv_sm.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    min-width: 900px;;
+    width: 80%;
+    height: 550px;
+}
+
+#gamearea {
+    width: 524px;
+	height: 441px;	
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    right: 79px;
+    z-index: -1;
+}
+
+#controller {
+	text-align: center;
+}
+
+.btn {
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 500px;
+    right: 70px;
+    padding: 10px 20px 10px 20px;
+	display: none;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: absolute;
+    right: 651px;
+    bottom: 139px;
+    height: 20px;
+    width: 40px;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+	visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity .6s;    
+	bottom: 125%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
