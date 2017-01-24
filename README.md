@@ -1,7 +1,7 @@
 #Dodge-Em
 
 A Web-App game built with Javascript, HTML, and CSS.  
-Using the controller on the screen, dodge the columns by pressing the D-pad, or Y, X, B, and A buttons.  Keyboard arrows are also functional.
+Using the controller on the screen, dodge the columns by clicking the D-pad, or Y, X, B, and A buttons with the mouse.  Keyboard arrows are also functional.
 
 Known Bugs:    
 The interface doesn't render properly in Opera for Macintosh.
